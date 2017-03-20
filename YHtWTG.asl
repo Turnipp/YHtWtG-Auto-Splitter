@@ -30,29 +30,15 @@ init
 		version = "Steam";
 	}
 }
- 
-startup
-{
-  
-  Action<string> DebugOutput = (text) => {
-		print("[YHtWtG Autosplitter] "+text); 
-	};
-	vars.DebugOutput = DebugOutput;
-	
-}
+
 
 start
 { 
-	//vars.DebugOutput(current.orbs.ToString("G"));
-	/*if (current.gameTime >= 0.0 && current.gameTime <= 1.0) {
-		vars.DebugOutput("Timer started");
-		return true;
-	}*/
-	
-	/* move to start if statment */ 
 	vars.in_start_cutscene = 1;
-	
-	vars.DebugOutput(modules.First().ModuleMemorySize.ToString("G"));
+	if (current.gameTime < old.gameTime) 
+	{
+		return true;
+	}
 }
 
 split
