@@ -8,7 +8,7 @@ The Autosplitter should automaticlly start the timer when a new game is started.
 
 This will display the games internal game timer. This splitter will only work when LivesSplit's `Compare Against` setting is set to `Game Time` by default, because it prohibits LiveSplit Timer from approximating game time between updates. This can be changed by unchecking `Force in-game time` in your Scriptable Autosplitter settings.
 
-You will need to manually reset you timer you timer as the Autosplitter can't detect resets right now. The Autosplitter will split at the beginning cutscene if the timer has not been reset, before starting a new game. This is because the beginning cutscene take control away from the player (just like lose and win orbs).
+You will need to manually reset your timer as the Autosplitter can't detect resets (right now). The Autosplitter will split at the beginning cutscene if the timer has not been reset, before starting a new game. This is because the beginning cutscene take control away from the player (just like lose and win orbs).
 
 ## Further Reading
 [Livesplit Autosplitter Documentation](https://github.com/LiveSplit/LiveSplit/blob/master/Documentation/Auto-Splitters.md) for more information
