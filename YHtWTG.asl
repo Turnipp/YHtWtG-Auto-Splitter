@@ -29,6 +29,12 @@ init
   }
 }
 
+startup
+{
+  settings.Add("lock_time", true, "Force in-game time");
+  settings.SetToolTip("lock_time", "prohibits LiveSplit Timer from approximating game time");
+}
+
 
 start
 {
@@ -80,7 +86,7 @@ update
 isLoading
 {
   /* stop in-game timer from being aproximated */
-  return true;
+  return settings["lock_time"];
 }
 
 gameTime
